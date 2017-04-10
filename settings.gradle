@@ -1,0 +1,5 @@
+rootProject.name = 'ssm'
+include 'entity'
+include 'common'
+include 'repository'
+
