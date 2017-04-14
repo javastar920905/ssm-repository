@@ -1,0 +1,6 @@
+# 参考文档
+* mybatis中文参考文档 http://www.mybatis.org/mybatis-3/zh/getting-started.html
+SqlSessionFactory 实例化配置
+
+mybatis github https://github.com/mybatis
+* mabatis 与spring boot集成示例 https://github.com/mybatis/spring-boot-starter
