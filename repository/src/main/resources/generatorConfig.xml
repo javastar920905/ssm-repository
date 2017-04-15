@@ -32,8 +32,8 @@
             <property name="rootClass" value="com.ouzhx.entity.BaseEntity"/>
         </javaModelGenerator>
         <!--生成xml文件-->
-        <sqlMapGenerator targetPackage="com.ouzhx.repository.mapper.xml"
-                         targetProject="repository/src/main/java">
+        <sqlMapGenerator targetPackage="xmlmapper"
+                         targetProject="repository/src/main/resources/">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
         <!--根据实体类生成对应的interface接口-->
