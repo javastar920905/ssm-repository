@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="mybatis.properties"></properties>
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="defaultStatementTimeout" value="5"/>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="logPrefix" value="mybatis-log"/>
+    </settings>
+    <typeAliases>
+        <package name="com.ouzhx.entity"/>
+    </typeAliases>
+    <environments default="dev">
+        <environment id="dev">
+            <transactionManager type="JDBC"/>
+            <!-- 连接池配置说明 http://www.mybatis.org/mybatis-3/zh/configuration.html#databaseIdProvider-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <!-- Using classpath relative resources -->
+       <!-- -->
+        <mapper resource="mapper"/>
+        <!-- Using mapper interface classes -->
+        <package name="com.ouzhx.repository.mapper"/>
+    </mappers>
+</configuration>

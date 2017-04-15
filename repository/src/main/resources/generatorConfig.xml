@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<!--配置参考文档  http://www.mybatis.org/generator/configreference/xmlconfig.html -->
+<generatorConfiguration>
+    <properties resource="mybatis.properties"></properties>
+    <!--数据库驱动 位置-->
+    <classPathEntry location="D:/mysql-connector-java-5.1.7-bin.jar"/>
+
+    <context id="mysqlTables" targetRuntime="MyBatis3">
+        <!--生成的类 去除注释-->
+        <commentGenerator>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+
+        <jdbcConnection driverClass="${mysql.driver}"
+                        connectionURL="${mysql.url}"
+                        userId="${mysql.username}"
+                        password="${mysql.password}">
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!--生成实体类-->
+        <javaModelGenerator targetPackage="com.ouzhx.entity" targetProject="entity/src/main/java">
+            <property name="trimStrings" value="true"/>
+            <!-- 给Model添加一个父类 -->
+            <property name="rootClass" value="com.ouzhx.entity.BaseEntity"/>
+        </javaModelGenerator>
+        <!--生成xml文件-->
+        <sqlMapGenerator targetPackage="com.ouzhx.repository.mapper.xml"
+                         targetProject="repository/src/main/java">
+            <property name="enableSubPackages" value="false"/>
+        </sqlMapGenerator>
+        <!--根据实体类生成对应的interface接口-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.ouzhx.repository.mapper"
+                             targetProject="repository/src/main/java">
+            <!--  为生成的接口添加父接口  -->
+            <property name="rootInterface" value="com.ouzhx.repository.mapper.BaseMapper"/>
+        </javaClientGenerator>
+
+        <table schema="mysql" tableName="CITY" domainObjectName="City"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableUpdateByExample="false"
+               enableSelectByExample="false"
+        >
+            <!-- <property name="useActualColumnNames" value="true"/>
+             <generatedKey column="ID" sqlStatement="DB2" identity="true" />
+             <columnOverride column="DATE_FIELD" property="startDate" />
+             <columnOverride column="LONG_VARCHAR_FIELD" jdbcType="VARCHAR" />-->
+            <!--<ignoreColumn column="id"/>-->
+        </table>
+
+    </context>
+</generatorConfiguration>

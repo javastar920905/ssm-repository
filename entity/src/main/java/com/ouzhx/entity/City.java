@@ -1,43 +1,43 @@
 package com.ouzhx.entity;
 
-/**
- * Created by ouzhx on 2017/4/13.
- */
-public class City {
-  private String provinceId;
-  private String id;
-  private String cityName;
-  private String description;
+public class City extends BaseEntity {
+    private Integer id;
 
-  public String getProvinceId() {
-    return provinceId;
-  }
+    private Integer provinceId;
 
-  public void setProvinceId(String provinceId) {
-    this.provinceId = provinceId;
-  }
+    private String cityName;
 
-  public String getId() {
-    return id;
-  }
+    private String description;
 
-  public void setId(String id) {
-    this.id = id;
-  }
+    public Integer getId() {
+        return id;
+    }
 
-  public String getCityName() {
-    return cityName;
-  }
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-  public void setCityName(String cityName) {
-    this.cityName = cityName;
-  }
+    public Integer getProvinceId() {
+        return provinceId;
+    }
 
-  public String getDescription() {
-    return description;
-  }
+    public void setProvinceId(Integer provinceId) {
+        this.provinceId = provinceId;
+    }
 
-  public void setDescription(String description) {
-    this.description = description;
-  }
+    public String getCityName() {
+        return cityName;
+    }
+
+    public void setCityName(String cityName) {
+        this.cityName = cityName == null ? null : cityName.trim();
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description == null ? null : description.trim();
+    }
 }
