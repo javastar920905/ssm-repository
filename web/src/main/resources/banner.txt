@@ -1,0 +1,2 @@
+${application.version}=ouzhx
+${application.title}=my web application

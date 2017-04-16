@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'http://repo.spring.io/plugins-release' }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE")
+        classpath 'io.spring.gradle:propdeps-plugin:0.0.8'
+    }
+}
+
+configure(allprojects) {
+    apply plugin: 'propdeps'
+    apply plugin: 'propdeps-maven'
+    apply plugin: 'propdeps-idea'
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+jar {
+    baseName = 'web'
+    version = '0.1.0'
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-freemarker")
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    /*dev tools*/
+    compile("org.springframework.boot:spring-boot-devtools")
+    compile("commons-logging:commons-logging:1.1.1")
+    optional("log4j:log4j:1.2.17")
+    provided("javax.servlet:javax.servlet-api:3.0.1")
+    testCompile("junit:junit:4.11")
+}
