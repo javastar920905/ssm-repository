@@ -25,9 +25,11 @@ jar {
 }
 
 dependencies {
+    compile project(":repository")
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-freemarker")
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('org.springframework.boot:spring-boot-starter-aop')
 
     /*dev tools*/
     compile("org.springframework.boot:spring-boot-devtools")
