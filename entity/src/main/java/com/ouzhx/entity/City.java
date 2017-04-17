@@ -1,43 +1,63 @@
 package com.ouzhx.entity;
 
 public class City extends BaseEntity {
-    private Integer id;
+    private Long id;
 
-    private Integer provinceId;
+    private String type;
 
-    private String cityName;
+    private String name;
 
-    private String description;
+    private String number;
 
-    public Integer getId() {
+    private String parentNumber;
+
+    private Integer orderNum;
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public Integer getProvinceId() {
-        return provinceId;
+    public String getType() {
+        return type;
     }
 
-    public void setProvinceId(Integer provinceId) {
-        this.provinceId = provinceId;
+    public void setType(String type) {
+        this.type = type == null ? null : type.trim();
     }
 
-    public String getCityName() {
-        return cityName;
+    public String getName() {
+        return name;
     }
 
-    public void setCityName(String cityName) {
-        this.cityName = cityName == null ? null : cityName.trim();
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
     }
 
-    public String getDescription() {
-        return description;
+    public String getNumber() {
+        return number;
     }
 
-    public void setDescription(String description) {
-        this.description = description == null ? null : description.trim();
+    public void setNumber(String number) {
+        this.number = number == null ? null : number.trim();
+    }
+
+    public String getParentNumber() {
+        return parentNumber;
+    }
+
+    public void setParentNumber(String parentNumber) {
+        this.parentNumber = parentNumber == null ? null : parentNumber.trim();
+    }
+
+    public Integer getOrderNum() {
+        return orderNum;
+    }
+
+    public void setOrderNum(Integer orderNum) {
+        this.orderNum = orderNum;
     }
 }

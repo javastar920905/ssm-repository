@@ -12,7 +12,7 @@ public class Test {
     AnnotationConfigApplicationContext context =
         new AnnotationConfigApplicationContext(AppConfig.class);
     CityMapper cityMapper = context.getBean(CityMapper.class);
-    City city = cityMapper.selectByPrimaryKey(1);
-    System.out.println(city.getDescription());
+    City city = cityMapper.selectByPrimaryKey(Long.parseLong("1"));
+    System.out.println(city.getName());
   }
 }

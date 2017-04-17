@@ -5,6 +5,7 @@ import java.util.Properties;
 
 import javax.sql.DataSource;
 
+import com.ouzhx.common.MybatisUtils;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.type.Alias;
 import org.apache.tomcat.jdbc.pool.DataSourceFactory;
@@ -69,7 +70,7 @@ public class mybatisConfig {
   @Profile("default")
   public DataSource dataSource2() throws Exception {
     System.out.println("正在使用 default 数据源!");
-    Resource resource = new ClassPathResource("mybatis.properties");
+    Resource resource = new ClassPathResource(MybatisUtils.configPropertiesFileName);
     Properties properties = new Properties();
     properties.load(resource.getInputStream());
     DataSourceFactory factory = new DataSourceFactory();
@@ -80,8 +81,8 @@ public class mybatisConfig {
   public SqlSessionFactoryBean sqlSessionFactoryBean(DataSource dataSource) throws Exception {
     SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
     sqlSessionFactoryBean.setDataSource(dataSource);
-    Resource[] xmlMappers = new PathMatchingResourcePatternResolver()
-        .getResources("classpath:xmlmapper/*.xml");
+    Resource[] xmlMappers =
+        new PathMatchingResourcePatternResolver().getResources("classpath:xmlmapper/*.xml");
     sqlSessionFactoryBean.setMapperLocations(xmlMappers);
     // sqlSessionFactoryBean.setConfigLocation(new ClassPathResource("mybatis-config.xml"));
     sqlSessionFactoryBean.setTypeAliasesPackage(env.getProperty("mybatis.typeAliasesPackage"));

@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Import;
  * Created by ouzhx on 2017/4/13.
  */
 @Configuration
-@Import(mybatisConfig.class)
+@Import({FlywayConfig.class})
 public class AppConfig {
 
 }
