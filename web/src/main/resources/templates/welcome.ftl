@@ -9,13 +9,7 @@ Time: ${time?time}
 <br>
 Message: ${message}
 desc: ${desc!""}
-<img src="/public/images/liu.jpg">
-<img src="liu.jpg">
-<img src="/liu.jpg">
-<img src="/BOOT-INF/classes/public/images/liu.jpg">
-<img src="/static/liu.jpg">
-<img src="/images/liu.jpg">
-<img src="/resources/public/images/liu.jpg">
+<img src="/static/images/liu.jpg" width="150" height="200">
 </body>
 
 </html>
