@@ -43,7 +43,7 @@
             <property name="rootInterface" value="com.ouzhx.repository.mapper.BaseMapper"/>
         </javaClientGenerator>
 
-        <table schema="mysql" tableName="city" domainObjectName="City"
+        <table schema="mysql" tableName="user" domainObjectName="User"
                enableCountByExample="false"
                enableDeleteByExample="false"
                enableUpdateByExample="false"
