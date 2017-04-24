@@ -25,6 +25,10 @@ public class TypeCreate extends BaseClient {
    */
   public Map<String, Object> getMapJson() {
     Map<String, Object> json = new HashMap<>();
+    json.put("name","ouzhx 2");
+    json.put("value","lalal");
+    json.put("lovelyName","小欧");
+    json.put("no","0101");
     ReflectMatch.setValue(json);
     return json;
   }
@@ -36,10 +40,10 @@ public class TypeCreate extends BaseClient {
    * @return
    * @throws Exception
    */
-  public XContentBuilder getContentBuilder() {
+  public static XContentBuilder getContentBuilder() {
     XContentBuilder contentBuilder = null;
     try {
-      contentBuilder = jsonBuilder().startObject().field("user", "kimchy")
+      contentBuilder = jsonBuilder().startObject().field("user", "ouzhx")
           .field("postDate", new Date()).field("message", "trying out Elasticsearch").endObject();
     } catch (IOException e) {
       e.printStackTrace();
