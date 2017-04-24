@@ -14,7 +14,10 @@ import java.net.UnknownHostException;
 public class BaseClient {
   private static final String host = "192.168.1.180";
   private static final Integer port = 9300;
-  protected static TransportClient client;
+  // 测试索引名称
+  public static final String INDEX = "ozxtest_index";
+  public static final String TYPE = "ozxtest_type";
+  public static  TransportClient client;
   static {
     try {
       client = new PreBuiltTransportClient(Settings.EMPTY)
@@ -25,7 +28,4 @@ public class BaseClient {
 
   }
 
-  public static TransportClient getClient() {
-    return client;
-  }
 }
