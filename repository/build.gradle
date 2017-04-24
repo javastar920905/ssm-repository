@@ -9,4 +9,8 @@ dependencies {
     compile("org.mybatis.generator:mybatis-generator-maven-plugin:1.3.5")
     //添加flyway 版本控制
     compile("org.flywaydb:flyway-core:4.1.2")
+    //添加elasticsearch
+    compile("org.elasticsearch.client:transport:5.2.1")
+    compile("org.apache.logging.log4j:log4j-api:2.7")
+    compile("org.apache.logging.log4j:log4j-core:2.7")
 }

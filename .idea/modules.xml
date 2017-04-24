@@ -13,7 +13,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/repository/repository_test.iml" filepath="$PROJECT_DIR$/.idea/modules/repository/repository_test.iml" group="repository" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ssm.iml" filepath="$PROJECT_DIR$/.idea/modules/ssm.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/web.iml" filepath="$PROJECT_DIR$/.idea/modules/web/web.iml" group="web" />
-      <module fileurl="file://D:\gitrepository\ssm-repository\.idea\modules\web.iml" filepath="D:\gitrepository\ssm-repository\.idea\modules\web.iml" group="web" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/web_main.iml" filepath="$PROJECT_DIR$/.idea/modules/web/web_main.iml" group="web" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/web_test.iml" filepath="$PROJECT_DIR$/.idea/modules/web/web_test.iml" group="web" />
     </modules>
