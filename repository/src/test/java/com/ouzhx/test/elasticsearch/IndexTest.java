@@ -5,12 +5,11 @@ import org.junit.Test;
 
 import com.ouzhx.repository.elasticsearch.BaseClient;
 import com.ouzhx.repository.elasticsearch.TypeCreate;
-import com.ouzhx.test.BaseTest;
 
 /**
  * Created by ouzhx on 2017/4/24.
  */
-public class IndexTest extends BaseTest {
+public class IndexTest  {
 
   @Test // 创建索引
   public void createIndexTest() {
