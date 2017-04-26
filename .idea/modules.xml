@@ -11,6 +11,12 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/repository/repository.iml" filepath="$PROJECT_DIR$/.idea/modules/repository/repository.iml" group="repository" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/repository/repository_main.iml" filepath="$PROJECT_DIR$/.idea/modules/repository/repository_main.iml" group="repository" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/repository/repository_test.iml" filepath="$PROJECT_DIR$/.idea/modules/repository/repository_test.iml" group="repository" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service/service.iml" filepath="$PROJECT_DIR$/.idea/modules/service/service.iml" group="service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-api/service-api.iml" filepath="$PROJECT_DIR$/.idea/modules/service-api/service-api.iml" group="service-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-api/service-api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/service-api/service-api_main.iml" group="service-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-api/service-api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/service-api/service-api_test.iml" group="service-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service/service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/service/service_main.iml" group="service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service/service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/service/service_test.iml" group="service" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ssm.iml" filepath="$PROJECT_DIR$/.idea/modules/ssm.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/web.iml" filepath="$PROJECT_DIR$/.idea/modules/web/web.iml" group="web" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/web_main.iml" filepath="$PROJECT_DIR$/.idea/modules/web/web_main.iml" group="web" />

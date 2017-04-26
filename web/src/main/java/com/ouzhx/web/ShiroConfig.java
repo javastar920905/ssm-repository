@@ -59,6 +59,7 @@ public class ShiroConfig {
     filterChainDefinitionMap.put("/user/edit/**", "authc,perms[user:edit]");// 这里为了测试，固定写死的值，也可以从数据库或其他配置中读取
     filterChainDefinitionMap.put("/login", "anon");
     filterChainDefinitionMap.put("/", "anon");
+    filterChainDefinitionMap.put("/test/**", "anon");
     filterChainDefinitionMap.put("/**", "user");// anon 可以理解为不拦截
 
     return filterChainDefinitionMap;

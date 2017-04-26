@@ -1,7 +1,5 @@
 package com.ouzhx.web;
 
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.subject.Subject;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
@@ -11,7 +9,7 @@ import org.springframework.context.annotation.Import;
  * Created by Administrator on 2017/4/15.
  */
 @SpringBootApplication
-@Import({WebMvcConfig.class, ShiroConfig.class})
+@Import({WebMvcConfig.class, ShiroConfig.class, MotanConfig.class})
 @ComponentScan(basePackages = "com.ouzhx.web.controller")
 public class AppConfig {
   /**

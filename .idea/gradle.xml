@@ -6,13 +6,15 @@
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="D:/gradle213bin/gradle213" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="gradleJvm" value="djk1.8" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/common" />
             <option value="$PROJECT_DIR$/entity" />
             <option value="$PROJECT_DIR$/repository" />
+            <option value="$PROJECT_DIR$/service" />
+            <option value="$PROJECT_DIR$/service-api" />
             <option value="$PROJECT_DIR$/web" />
           </set>
         </option>
