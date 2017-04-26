@@ -42,6 +42,8 @@ dependencies {
     compile("com.weibo:motan-core:0.2.2")
     compile("com.weibo:motan-transport-netty:0.2.2")
     compile("com.weibo:motan-springsupport:0.2.2")
+    //motan zookeeper
+    compile("com.weibo:motan-registry-zookeeper:0.2.2")
 
     //添加swagger api 文档
     compile 'com.mangofactory:swagger-springmvc:1.0.2',

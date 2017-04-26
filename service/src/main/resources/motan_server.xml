@@ -5,8 +5,16 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
    http://api.weibo.com/schema/motan http://api.weibo.com/schema/motan.xsd">
 
+    <!--添加zookeeper注冊中心-->
+    <motan:registry regProtocol="zookeeper" name="my_zookeeper" address="60.205.228.78:2181"/>
+
+    <!-- 通用配置，多个rpc服务使用相同的基础配置. group和module定义具体的服务池。export格式为“protocol id:提供服务的端口” -->
+    <motan:basicService id="serviceBasicConfig" export="8002" group="motan-rpc"
+                        module="service" registry="my_zookeeper"/>
+
     <!-- service implemention bean -->
     <bean id="cityServiceImpl" class="com.ouzhx.service.impl.CityServiceImpl"/>
-    <!-- exporting service by Motan -->
-    <motan:service interface="com.ouzhx.service.CityService" ref="cityServiceImpl" export="8002"/>
+    <!--motan:service中的basicService属性用来标识引用哪个motan:basicService对象，对于basicService中已定义的内容，service不必重复配置。-->
+    <motan:service interface="com.ouzhx.service.CityService" ref="cityServiceImpl"
+                   basicService="serviceBasicConfig"/>
 </beans>
