@@ -1,5 +1,16 @@
 # ssm-repository
-这是持久层的手脚架项目
+这是spring mvc+mybatis的手脚架项目  使用motan 作为rpc框架
+* web 层添加了shiro 权限控制,需要自定义realm
+* web层为motan的client service为motan的服务端
+这里使用了zookeeper作为注册中心,60.205.228.78:2181 (一个docker容器 2017-04-26后该主机过期)
+如果需修改注册中心地址,请修改下面两个配置文件 <motan:registry address属性/>
+web模块 /src/main/resources/motan_client.xml
+service模块 /src/main/resources/motan_client.xml
+
+
+
+
+
 
 
 spring 参考文档 http://spring.cndocs.tk/ 
