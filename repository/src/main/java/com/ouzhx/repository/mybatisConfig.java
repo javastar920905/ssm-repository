@@ -1,22 +1,15 @@
 package com.ouzhx.repository;
 
-import java.io.IOException;
 import java.util.Properties;
 
 import javax.sql.DataSource;
 
-import com.ouzhx.common.MybatisUtils;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.type.Alias;
+import com.ouzhx.common.config.MybatisUtils;
 import org.apache.tomcat.jdbc.pool.DataSourceFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
-import org.mybatis.spring.mapper.ClassPathMapperScanner;
-import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
@@ -25,7 +18,6 @@ import org.springframework.core.env.Environment;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-import org.springframework.util.ResourceUtils;
 
 /**
  * Created by ouzhx on 2017/4/14.

@@ -1,4 +1,4 @@
-package com.ouzhx.common;
+package com.ouzhx.common.config;
 
 /**
  * Created by ouzhx on 2017/4/17.

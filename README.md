@@ -3,9 +3,8 @@
 * web 层添加了shiro 权限控制,需要自定义realm
 * web层为motan的client service为motan的服务端
 这里使用了zookeeper作为注册中心,60.205.228.78:2181 (一个docker容器 2017-04-26后该主机过期)
-如果需修改注册中心地址,请修改下面两个配置文件 <motan:registry address属性/>
-web模块 /src/main/resources/motan_client.xml
-service模块 /src/main/resources/motan_client.xml
+当前项目使用的注解方式配置,如果需修改注册中心地址 请修改下面文件
+com.ouzhx.common.config.MotanConstants.java
 
 
 
@@ -13,6 +12,12 @@ service模块 /src/main/resources/motan_client.xml
 
 
 
+
+
+
+##
+##
+#
 spring 参考文档 http://spring.cndocs.tk/ 
  # spring 框架基础概述
  spring 框架,为实现java应用程序提供了全面基础架构支持,你可以专注于应用开发,让spring处理基础架构问题

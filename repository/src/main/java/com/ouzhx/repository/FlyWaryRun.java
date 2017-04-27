@@ -1,6 +1,6 @@
 package com.ouzhx.repository;
 
-import com.ouzhx.common.MybatisUtils;
+import com.ouzhx.common.config.MybatisUtils;
 import org.apache.tomcat.jdbc.pool.DataSourceFactory;
 import org.flywaydb.core.Flyway;
 import org.springframework.core.io.ClassPathResource;
