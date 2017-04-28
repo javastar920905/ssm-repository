@@ -6,16 +6,11 @@
 当前项目使用的注解方式配置,如果需修改注册中心地址 请修改下面文件
 com.ouzhx.common.config.MotanConstants.java
 
+* 添加了redis 消息订阅和发布功能
+service 为消息发布者 ,web为消息订阅者 
+redis服务器配置在 common项目 com.ouzhx.common.config.RedisConstants.java文件中修改
 
 
-
-
-
-
-
-
-
-##
 ##
 #
 spring 参考文档 http://spring.cndocs.tk/ 
