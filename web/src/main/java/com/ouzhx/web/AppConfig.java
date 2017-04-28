@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Import;
  * Created by Administrator on 2017/4/15.
  */
 @SpringBootApplication
-@Import({WebMvcConfig.class, ShiroConfig.class, MotanConfig.class})
+@Import({WebMvcConfig.class, ShiroConfig.class, MotanConfig.class, RedisConfig.class})
 @ComponentScan(basePackages = "com.ouzhx.web.controller")
 public class AppConfig {
   /**

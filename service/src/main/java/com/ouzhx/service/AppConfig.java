@@ -1,16 +1,15 @@
 package com.ouzhx.service;
 
+import com.ouzhx.common.redis.RedisConfig;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
-
-import com.ouzhx.repository.FlywayConfig;
-import org.springframework.context.annotation.ImportResource;
 
 /**
  * Created by ouzhx on 2017/4/13.
  */
 @Configuration
-@Import({MotanConfig.class})
+@Import({MotanConfig.class, RedisConfig.class})
 public class AppConfig {
 
 }

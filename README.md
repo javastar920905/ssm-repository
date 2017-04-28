@@ -7,6 +7,12 @@
 web模块 /src/main/resources/motan_client.xml
 service模块 /src/main/resources/motan_client.xml
 
+* 添加了redis 消息订阅和发布功能
+service 为消息发布者 ,web为消息订阅者 
+redis服务器配置在 common项目 com.ouzhx.common.config.RedisConstants.java文件中修改
+
+
+
 
 
 
