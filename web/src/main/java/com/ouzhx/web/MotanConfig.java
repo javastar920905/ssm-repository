@@ -21,7 +21,7 @@ public class MotanConfig {
   @Bean /// 添加用到motan注解的类的包名 用到service的需要添加注解 @MotanReferer(basicReferer = "basicRefererConfig")
   public AnnotationBean annotationBean() {
     AnnotationBean annotationBean = new AnnotationBean();
-    // service api 路径
+    // @MotanReferer  路径,一般为controller 的父包
     annotationBean.setPackage("com.ouzhx.web");
     return annotationBean;
   }
