@@ -20,7 +20,7 @@ public class MotanServerRun {
     redisTest.addCache();
     System.out.println("load cache end!...");
     int i = 0;
-    for (; i < 100; i++) {
+    for (; i < 0; i++) {
       Thread.sleep(Long.parseLong("1000"));
       redisTest.sendMsg("count =" + i);
       System.out.println("service send a redis msg!");
