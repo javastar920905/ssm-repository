@@ -7,6 +7,7 @@ import org.springframework.context.annotation.ImportResource;
  * Created by ouzhx on 2017/4/26.
  */
 @Configuration
-@ImportResource("classpath:motan_client.xml")
-public class MotanConfig {
+@ImportResource("classpath:dubbo_client.xml")
+public class DubboConsumerConfig {
+
 }

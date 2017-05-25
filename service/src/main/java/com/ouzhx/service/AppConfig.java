@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Import;
  * Created by ouzhx on 2017/4/13.
  */
 @Configuration
-@Import({MotanConfig.class, RedisConfig.class})
+@Import({DubboServerConfig.class, RedisConfig.class})
 public class AppConfig {
 
 }
